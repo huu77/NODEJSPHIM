@@ -1,0 +1,42 @@
+<div class="container d-flex">
+    <div class="mx-5 mt-5"><img src="{{course.img}}" alt="" style="width: 340px;"></div>
+    <div>
+        <h1 
+        style="font-family: Nunito,sans-serif;   
+            font-size: 68px;
+            line-height: 60px;
+            font-weight: 800;"
+            class="mt-5">
+            {{course.title}} 
+            </h1>
+         <div class="my-3">
+            <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647446a11d19_tag.svg" alt="" style="width: 17px;" class="mx-1">
+        <span class="text-decoration-underline" style="font-family: Nunito,sans-serif;   ">the loai phim</span>
+        <img src="https://www.ssphim.net/static/5fe2d564b3fa64a886a11cee/5fe2d564b3fa647cf1a11d0b_clock.svg" alt=""  style="width: 17px;" class="mx-1">
+        <span  style="font-family: Nunito,sans-serif;   ">
+            6/8/1990
+            </span>
+        </div>
+        <button type="button" class="btn btn-info mx-1">Trailer</button>
+        <button type="button" class="btn btn-danger">Xem PHim</button>
+        <div class="mt-5">
+            <h1>MÔ TẢ</h1>
+                <p class="d-block " style="width:808px ;font-family: Nunito,sans-serif;   ">{{course.mota}}</p>
+         </div>
+    </div>
+   
+</div>
+ <div class="video_film my-5">
+   <iframe width="1200" height="675" src="https://www.youtube.com/embed/{{course.video}}" title="{{course.title}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+ </div>
+
+
+{{!-- <div class="mt-5">
+    <h1 class="text-warning"
+      style="font-family: Nunito,sans-serif;   
+            font-size:60px;
+            line-height: 60px;
+            font-weight: 600;">CÓ THỂ BẠN CŨNG MUỐN XEM</h1>
+
+</div> --}}
+   

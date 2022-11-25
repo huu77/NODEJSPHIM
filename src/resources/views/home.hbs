@@ -1,0 +1,73 @@
+
+<div class=" my-3 my_title">
+<h3 class="text-warning d-block " >PHIM ĐỀ CỬ</h3>
+
+</div>
+
+<div class="carosel_card my-2">
+<div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
+  <div class="carousel-inner rounded-3">
+
+    <div class="carousel-item active card_item ">
+      <img src="https://i.ytimg.com/an_webp/XLr8rWFduUU/mqdefault_6s.webp?du=3000&sqp=CIWnvJcG&rs=AOn4CLBjjFU0DnGjHDGnulTcU6qY2NjUaQ" class="d-block w-100 " alt="...">
+        <div class="child_img">
+         <img src="https://i.ytimg.com/an_webp/XLr8rWFduUU/mqdefault_6s.webp?du=3000&sqp=CIWnvJcG&rs=AOn4CLBjjFU0DnGjHDGnulTcU6qY2NjUaQ" class="d-block w-100 " alt="...">
+        </div>
+    </div>
+    
+    <div class="carousel-item card_item">
+      <img src="https://i.ytimg.com/an_webp/cdItBRUtKM8/mqdefault_6s.webp?du=3000&sqp=CNaovJcG&rs=AOn4CLBiISuDQCvH_008cbV7ygGvLx9hKQ" class="d-block w-100" alt="...">
+      <div class="child_img ">
+         <img src="https://i.ytimg.com/an_webp/cdItBRUtKM8/mqdefault_6s.webp?du=3000&sqp=CNaovJcG&rs=AOn4CLBiISuDQCvH_008cbV7ygGvLx9hKQ" class="d-block w-100 " alt="...">
+        </div>
+    </div>
+    <div class="carousel-item card_item">
+      <img src="https://i.ytimg.com/an_webp/SRphAczVAcM/mqdefault_6s.webp?du=3000&sqp=CLvLvJcG&rs=AOn4CLB9wyacDU8Mfz_-8mIky2OyP7-r0A" class="d-block w-100" alt="...">
+      <div class="child_img">
+         <img src="https://i.ytimg.com/an_webp/SRphAczVAcM/mqdefault_6s.webp?du=3000&sqp=CLvLvJcG&rs=AOn4CLB9wyacDU8Mfz_-8mIky2OyP7-r0A" class="d-block w-100 " alt="...">
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true">
+    
+    </span>
+    <span class="visually-hidden " >Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-secondary" aria-hidden="true">
+
+    </span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+
+<div class=" my-3 my_title">
+<h3 class="text-warning d-block  " >PHIM MỚI</h3>
+<div class="d-flex mx-5">
+
+<button type="button" class="btn btn-secondary mx-2">Hành Động</button>
+<button type="button" class="btn btn-secondary mx-2">Kinh dị</button>
+<button type="button" class="btn btn-secondary mx-2">Hài hước</button>
+</div>
+</div>
+<div class="block_card">
+{{#each courses}}
+<div class="card" style="width: 18rem;">
+  <a href="/video/{{this.slug}}">
+  <img src="{{this.img}}" class="card-img-top img_card_home" alt="...">
+  </a>
+  <div class="card-body card_home_body">
+     <a href="/video/{{this.slug}}">
+    <h5 class="card-title">{{this.title}}</h5>
+     </a>
+    <p class="card-text">{{this.mota}}</p>
+    <a href="#" class="btn btn-warning ">xem phim</a>
+  </div>
+</div>
+{{/each}}
+</div>
+
